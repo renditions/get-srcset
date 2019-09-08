@@ -35,6 +35,8 @@ The above code logs the following string to the console:
 /images/320.jpg 320w,/images/1024.jpg 1024w
 ```
 
+The first function argument is expected to be an array **sorted by `src` in ascending order**.
+
 ### Using with React
 
 ```jsx
