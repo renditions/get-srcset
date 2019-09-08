@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/@renditions/get-srcset.svg?style=flat-square)](https://www.npmjs.com/package/@renditions/get-srcset) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/feross/standard)
 
-Generate the srcset attribute for HTML [img](https://devdocs.io/html/element/img) and [picture](https://devdocs.io/html/element/picture) tags.
+Generate the srcset attribute for HTML [img](https://devdocs.io/html/element/img) and [picture](https://devdocs.io/html/element/source) tags.
 
 ## Install
 
