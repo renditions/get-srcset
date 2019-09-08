@@ -4,7 +4,8 @@
   "description": "Generate the srcset attribute for HTML img and picture tags",
   "main": "src/index.js",
   "scripts": {
-    "test": "standard --global describe --global it --global expect --global beforeEach && jest",
+    "standard": "standard --global jest --global describe --global it --global expect --global beforeEach",
+    "test": "npm run standard && jest",
     "tdd": "jest --watch"
   },
   "repository": {

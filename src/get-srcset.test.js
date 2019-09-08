@@ -48,7 +48,7 @@ describe('get srcset attribute', () => {
   it('should not modify the renditions array', () => {
     renditions.reverse()
     const originalRenditions = [...renditions]
-    const result = getSrcset(renditions, true)
+    getSrcset(renditions, true)
     expect(sortRenditions).toHaveBeenCalledTimes(1)
     expect(renditions).toEqual(originalRenditions)
   })

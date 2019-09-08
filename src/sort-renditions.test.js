@@ -1,4 +1,4 @@
-const sortRenditions = require('./sort-renditions');
+const sortRenditions = require('./sort-renditions')
 
 describe('sort renditions', () => {
   let renditions
