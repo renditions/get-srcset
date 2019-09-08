@@ -18,11 +18,11 @@ import getSrcset from '@renditions/get-srcset'
 const srcset = getSrcset([
   {
     src: '/images/320.jpg',
-    width: '320'
+    width: 320
   },
   {
     src: '/images/1024.jpg',
-    width: '1024'
+    width: 1024
   }
 ])
 
@@ -35,7 +35,39 @@ The above code logs the following string to the console:
 /images/320.jpg 320w,/images/1024.jpg 1024w
 ```
 
-The first function argument is expected to be an array **sorted by `src` in ascending order**.
+### Sorting
+
+The first argument is expected to be an array sorted by `width` in ascending order.
+
+To sort the array automatically, pass `true` for the second argument:
+
+```js
+const unsortedRenditions = [
+  {
+    src: '/images/1024.jpg',
+    width: 1024
+  },
+  {
+    src: '/images/320.jpg',
+    width: 320
+  },
+  {
+    src: '/images/720.jpg',
+    width: 720
+  }
+]
+
+const srcset = getSrcset(unsortedRenditions, true)
+
+console.log(srcset)
+```
+
+The above code logs the following string to the console:
+
+```
+/images/320.jpg 320w,/images/720.jpg 720w,/images/1024.jpg 1024w
+```
+
 
 ### Using with React
 
