@@ -1,16 +1,8 @@
+const sortRenditions = require('./sort-renditions')
+
 const getSrcset = renditions => renditions
   .map(({ src, width }, i) => `${src} ${width}w`)
   .join(',')
-
-const sortRenditions = renditions => {
-  renditions.forEach(r => {
-    if (typeof r.width === 'string') {
-      r.width = parseInt(r.width, 10)
-    }
-  })
-
-  renditions.sort((a, b) => a.width > b.width)
-}
 
 const getSortedSrcset = (renditions, sort = false) => {
   if (!sort) {
@@ -19,10 +11,9 @@ const getSortedSrcset = (renditions, sort = false) => {
 
   const renditionsCopy = [...renditions]
 
-  sortRenditions(renditionsCopy)
+  const sortedRenditions = sortRenditions(renditionsCopy)
 
-  return getSrcset(renditionsCopy)
+  return getSrcset(sortedRenditions)
 }
 
 module.exports = getSortedSrcset
-module.exports.sortRenditions = sortRenditions
