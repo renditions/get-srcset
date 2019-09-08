@@ -26,13 +26,8 @@ const srcset = getSrcset([
   }
 ])
 
-console.log(srcset)
-```
-
-The above code logs the following string to the console:
-
-```
-/images/320.jpg 320w,/images/1024.jpg 1024w
+console.log({ srcset })
+// { srcset: '/images/320.jpg 320w,/images/1024.jpg 1024w' }
 ```
 
 ### Sorting
@@ -59,15 +54,9 @@ const unsortedRenditions = [
 
 const srcset = getSrcset(unsortedRenditions, true)
 
-console.log(srcset)
+console.log({ srcset })
+// { srcset: '/images/320.jpg 320w,/images/720.jpg 720w,/images/1024.jpg 1024w' }
 ```
-
-The above code logs the following string to the console:
-
-```
-/images/320.jpg 320w,/images/720.jpg 720w,/images/1024.jpg 1024w
-```
-
 
 ### Using with React
 
