@@ -67,8 +67,10 @@ import getSrcset from '@renditions/get-srcset'
 const renditionWidths = ['320', '1024']
 
 const Image = ({ filename, ext, ...rest }) => {
-  const renditions = renditionWidths
-    .map(width => ({ width, src: `/images/${filename}_${width}.${ext}` }))
+  const renditions = renditionWidths.map(width => ({
+    width,
+    src: `/images/${filename}_${width}.${ext}`
+  }))
 
   const srcset = getSrcset(renditions)
 
