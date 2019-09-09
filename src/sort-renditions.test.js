@@ -7,12 +7,16 @@ describe('sort renditions', () => {
   beforeEach(() => {
     renditions = [
       {
+        src: '/images/320.jpg',
+        width: 320
+      },
+      {
         src: '/images/720.jpg',
         width: 720
       },
       {
-        src: '/images/320.jpg',
-        width: 320
+        src: '/images/640.jpg',
+        width: 640
       },
       {
         src: '/images/1024.jpg',
@@ -23,6 +27,10 @@ describe('sort renditions', () => {
       {
         src: '/images/320.jpg',
         width: 320
+      },
+      {
+        src: '/images/640.jpg',
+        width: 640
       },
       {
         src: '/images/720.jpg',

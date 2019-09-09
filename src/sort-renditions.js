@@ -5,7 +5,7 @@ const sortRenditions = renditions => {
     }
   })
 
-  renditions.sort((a, b) => a.width > b.width)
+  renditions.sort((a, b) => a.width - b.width)
 
   return renditions
 }
