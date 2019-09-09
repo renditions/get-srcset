@@ -1,6 +1,6 @@
 {
   "name": "@renditions/get-srcset",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate the srcset attribute for HTML img and picture tags",
   "main": "src/index.js",
   "scripts": {
