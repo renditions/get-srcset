@@ -19,8 +19,8 @@
   },
   "homepage": "https://renditions.dev",
   "devDependencies": {
-    "jest": "^24.9.0",
-    "standard": "^14.1.0"
+    "jest": "^26.1.0",
+    "standard": "^14.3.4"
   },
   "keywords": [
     "srcset",
