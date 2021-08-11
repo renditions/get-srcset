@@ -19,7 +19,7 @@
   },
   "homepage": "https://renditions.dev",
   "devDependencies": {
-    "jest": "27.0.4",
+    "jest": "27.0.6",
     "standard": "16.0.3"
   },
   "keywords": [
