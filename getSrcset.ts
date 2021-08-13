@@ -3,7 +3,7 @@ export type Rendition = {
   width: number;
 };
 
-const sortRenditions = (renditions: Rendition[]) => {
+export const sortRenditions = (renditions: Rendition[]) => {
   renditions.forEach((r) => {
     if (typeof r.width === "string") {
       r.width = parseInt(r.width, 10);
