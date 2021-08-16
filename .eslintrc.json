@@ -2,13 +2,11 @@
   "root": true,
   "extends": [
     "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
-    "prettier",
-    "plugin:jest/recommended"
+    "plugin:jest/recommended",
+    "plugin:jest/style"
   ],
-  "plugins": ["@typescript-eslint", "jest"],
   "env": {
     "es6": true,
     "node": true,
@@ -16,7 +14,6 @@
   },
   "rules": {
     "@typescript-eslint/explicit-module-boundary-types": "off",
-    "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-implicit-any-catch": "error"
   }
 }
