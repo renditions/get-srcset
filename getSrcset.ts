@@ -5,7 +5,7 @@ export type Rendition = {
 
 export const sortRenditions = <T extends { width: number }>(
   renditions: T[]
-) => {
+): T[] => {
   renditions.forEach((r) => {
     if (typeof r.width === "string") {
       r.width = parseInt(r.width, 10);
@@ -20,7 +20,7 @@ export const sortRenditions = <T extends { width: number }>(
 const getSrcset = (renditions: Rendition[]) =>
   renditions.map(({ src, width }) => `${src} ${width}w`).join(",");
 
-const getSortedSrcset = (renditions: Rendition[], sort = false) => {
+const getSortedSrcset = (renditions: Rendition[], sort = false): string => {
   if (!sort) {
     return getSrcset(renditions);
   }
